@@ -1,0 +1,96 @@
+body {
+	background-color: #996888;
+}
+
+header {
+	color: #FFFFFF;
+}
+h1 {
+	text-align: center;
+	font-family: "Lucida Calligraphy";
+	
+}
+
+table {
+	font-family: "Century Gothic", Arial, "Times New Roman";
+	font-size: 15px;
+	font-weight: 300px;
+	line-height: 17px;
+	margin: 0 auto;
+	width: 75%;
+}
+
+th {
+	border-style: solid;
+	border-color: #D4D4D4;
+	border-width: 2px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+td {
+	color: black;
+	border-style: solid;
+	border-color: 996888;
+	border-width: 3px;
+	background-color: #CFB997;
+	text-align: center;
+}
+
+
+
+th:first-child {
+	text-align: center;
+	width: 20%;
+	background-color: #FF2400;
+	border-color: #228C22;
+}
+
+tr:first-child > th:not(:first-child) {
+	width: 16%;
+	background-color: #228C22;
+	border-color: #FF2400;
+}
+
+td.filled {
+	border-style: solid;
+	border-color: black;
+}
+
+th {
+	border-style: solid;
+	border-width: 3px;
+	height: 40px;
+}
+
+tr:first-child > th:first-child {
+	visibility: hidden;
+}
+
+header > p {
+	text-align: center;
+	font-family: Arial;
+}
+
+td.filled > p:not(.classcode) {
+	display: none;
+}
+
+td.filled:active > p:not(.classcode) {
+	display: block;
+	font-size: 13px;
+	margin: 2px;
+}
+
+td.filled:active {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+td.filled:active > p.classcode {
+	font-weight: bold;
+}
+
+.units::after {
+  content: " units";
+}
